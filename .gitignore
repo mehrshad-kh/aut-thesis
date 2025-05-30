@@ -1,0 +1,22 @@
+# Biber
+*.blg
+
+# Build directory, anywhere in the source tree
+**/build/
+
+# Documentation
+ocs/*
+
+# macOS
+.DS_Store
+
+# TeX
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+# Vim
+*.swo
+*.swp
+
