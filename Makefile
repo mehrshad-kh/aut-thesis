@@ -1,5 +1,8 @@
 default: all
 
+setup:
+	mkdir aux build
+
 all:
 	latexmk -pv -pdf src/main
 
