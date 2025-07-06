@@ -1,3 +1,6 @@
+
+# Auxiliray directory, for use with latexmk.
+aux/
 # Biber
 *.blg
 
@@ -6,9 +9,6 @@
 
 # Documentation
 ocs/*
-
-# macOS
-.DS_Store
 
 # TeX
 *.aux
@@ -19,4 +19,7 @@ ocs/*
 # Vim
 *.swo
 *.swp
+
+# macOS
+.DS_Store
 

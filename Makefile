@@ -1,7 +1,7 @@
 default: all
 
 all:
-	latexmk -pv -pdf -outdir=build src/AUTthesis.tex
+	latexmk -pv -pdf src/AUTthesis.tex
 
 clean:
 	rm -rf build/*
