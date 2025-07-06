@@ -45,34 +45,34 @@
 \begin{document}
 \baselineskip=.75cm
 \linespread{1.75}
-\input{src/fa_title}
+\input{src/title/fa}
 % تاییدیه دفاع
-\input{src/taid}
+\input{src/etc/taid}
 % چنانچه مایل به چاپ صفحات «تقدیم»، «نیایش» و «سپاس‌گزاری» در خروجی نیستید، خط‌های زیر را با گذاشتن ٪  در ابتدای آنها غیرفعال کنید.
 % پایان‌نامه خود را تقدیم کنید
 % نیایش خود را در فایل زیر بنویسید.
-\input{src/Chant}
+\input{src/etc/chant}
 % سپاسگزاری را در فایل زیر بنویسید.
-\input{src/acknowledgement}
+\input{src/etc/acknowledgement}
 % دستور زیر برای شماره گذاری صفحات قبل از فصل اول با حروف ابجد است.
 \pagenumbering{alph}
 %-----------------------------------------------------------------------------
 % فایل زیر دستورات مربوط به نمایش صفحات فهرست مطالب- فهرست اشکال و جداول است.
-\input{src/TOC-TOF-LOT}
+\input{src/etc/toc_tof_lot}
 % در صورت تمایل می‌توانید با فعال کردن دستور بالا، لیست تصاویر را به  پایان‌نامه خود اضافه کنید.
 %-------------------------------------------------------------------------symbols(فهرست نمادها)
 % وجود لیست نمادها الزامیست.(لطفاً نمادهای خود را جایگذین نمادهای پیش‌فرض کنید.)
-\input{src/list-of-symbols}
+\input{src/etc/list_of_symbols}
 
 \pagenumbering{arabic}
 \pagestyle{style1}
 %--------------------------------------------------------------------------chapters(فصل ها)
-\include{src/chapter1}
-\include{src/chapter2}
-\include{src/chapter3}
-\include{src/chapter4}
-\include{src/chapter5}
-\include{src/chapter6}
+\include{src/chapters/01}
+\include{src/chapters/02}
+\include{src/chapters/03}
+\include{src/chapters/04}
+\include{src/chapters/05}
+\include{src/chapters/06}
 
 
 %--------------------------------------------------------------------------appendix( مراجع و پیوست ها)
@@ -81,17 +81,17 @@
 \appendix
 \bibliographystyle{unsrt-fa}
 \bibliography{references}
-\include{src/appendix1}
+\include{src/appendices/01}
 %--------------------------------------------------------------------------dictionary(واژه نامه ها)
 %اگر مایل به داشتن صفحه واژه‌نامه نیستید، خط زیر را غیر فعال کنید.
 \parindent=0pt
-\include{src/dicfa2en}%
-\include{src/dicen2fa}
+\include{src/dic/fa2en}%
+\include{src/dic/en2fa}
 %--------------------------------------------------------------------------index(نمایه)
 %اگر مایل به داشتن صفحه نمایه نیستید، خط زیر را غیر فعال کنید.
 \pagestyle{style7}
 \printindex
 \pagestyle{style7}
-\include{src/en-abstract}
-\input{src/en_title}
+\include{src/abstract/en}
+\input{src/title/en}
 \end{document}
