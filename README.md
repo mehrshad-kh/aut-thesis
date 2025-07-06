@@ -11,6 +11,13 @@ university matters.
 
 ## Description
 
-Run `make`. If you have all the
-required TeX packages and programs, the output PDF file should open to
-you.
+Run `make setup`, then `make`.
+
+Each time you run `make clean`, make sure to run `make setup` afterwards.
+
+## Requirements
+
+No bragging but, I'm a UNIX guy, so I spend most of my time behind a computer
+in the Terminal. Hence, I use `make`, which in turn uses `latexmk` to create PDF 
+output.
+
