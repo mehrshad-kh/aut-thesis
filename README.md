@@ -11,6 +11,6 @@ university matters.
 
 ## Description
 
-To get started, run `make setup`. Then, `make`. If you have all the
+Run `make`. If you have all the
 required TeX packages and programs, the output PDF file should open to
 you.
