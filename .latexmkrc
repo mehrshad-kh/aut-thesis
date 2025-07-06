@@ -1,6 +1,8 @@
 # XeLaTeX is required for XePersian.
 $pdflatex = 'xelatex -halt-on-error -interaction nonstopmode %O %S';
 
+# If you're on Windows, then change then set $aux_dir to another
+# value, as Windows does not allow a directory to be called 'aux'.
 $aux_dir = 'aux';
 $out_dir = 'build';
 
