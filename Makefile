@@ -1,10 +1,15 @@
-default: all
+.PHONY: again clean default setup
 
-all:
+default:
 	latexmk -pv -pdf src/main
 
 again:
 	latexmk -g -pv -pdf src/main
+
+clean:
+	rm -rf aux/*
+	rm -rf build/*
+	make setup
 
 # Why is a 'setup' rule needed? Because:
 # latexmk prior to version 4.86 does not support creation of nested 
@@ -19,8 +24,4 @@ setup:
 	mkdir -p aux/src/etc
 	mkdir -p aux/src/title
 
-clean:
-	rm -rf aux/*
-	rm -rf build/*
-	make setup
 
