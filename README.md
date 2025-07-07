@@ -13,8 +13,6 @@ university matters.
 
 Run `make setup`, then `make`.
 
-Each time you run `make clean`, make sure to run `make setup` afterwards.
-
 ## Requirements
 
 No bragging but, I'm a UNIX guy, so I spend most of my time behind a computer

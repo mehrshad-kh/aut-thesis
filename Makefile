@@ -22,4 +22,5 @@ setup:
 clean:
 	rm -rf aux/*
 	rm -rf build/*
+	make setup
 
